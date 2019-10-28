@@ -1,0 +1,616 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-width: 320px;
+  color: #1d1d1d;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 100px 0;
+}
+h3{
+  font-style: italic;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+}
+h4{
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+/*=============================== Button ScrollToTop ========================================*/
+.scrollToTop {
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  border-radius: 4px;
+  display: none;
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  z-index: 10001;
+  color: #ffffff;
+  transition: .5s ease;
+  background-color: #da1757;
+  border: 0;
+  cursor: pointer;
+}
+.scrollToTop:hover {
+  background-color: #ffffff;
+  text-decoration: none;
+  outline: none;
+  color: #da1757;
+  border: 1px solid #da1757;
+}
+/*=============================== Header ========================================*/
+.mainHeader {
+  /*background: url("../img/main1.jpg") center no-repeat;*/
+  /*background-size: cover;*/
+  background: linear-gradient(45deg, rgba(255,0,32,1) 0%, rgba(68,26,130,1) 100%);
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+}
+.mainHeader .navbar-toggler {
+  color: #ffffff;
+  outline: none;
+}
+.mainHeader .navbar-brand ,
+.mainHeader ul li a {
+  color: #ffffff;
+  font-weight: 600;
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+.mainHeader .navbar-brand {
+  font-size: 42px;
+}
+.mainHeader ul li a {
+  font-size: 17px;
+}
+.mainHeader ul li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  height: 1px;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.mainHeader ul li a:hover::after {
+  transform: scale(1);
+
+}
+.mainHeaderText {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  max-width: 700px;
+  color: #ffffff;
+  padding: 20px;
+}
+.mainHeaderButtons {
+  padding-left: 30px;
+
+}
+.btn {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.mainHeaderButtons .btn {
+  padding: 20px 40px;
+  margin-right: 20px;
+  margin-top: 30px;
+  opacity: .8;
+  box-shadow: 0 4px 16px rgba(0,0,0, .35);
+  transition: all .5s;
+}
+.mainHeaderButtons .btn:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+.btn-pink {
+  background-color: #f43367;
+}
+.btn-violet {
+  background-color: #69328e;
+}
+.navbar-dark .navbar-nav .menu-item{
+  margin-right: 20px;
+}
+.navbar-dark .navbar-nav .menu-item a {
+  color: rgba(255,255,255, .5);
+}
+.navbar-dark .navbar-nav .menu-item a:focus,
+.navbar-dark .navbar-nav .menu-item a:hover {
+  color: rgba(255,255,255, .75);
+}
+/*=============================== Section Watch ========================================*/
+.sectionWatch {
+  /*background: url("../img/world_map.png") center no-repeat;*/
+  /*background-size: cover;*/
+}
+.sectionWatch h3,
+.sectionWatch h4 {
+  color: #484848;
+}
+.sectionTabs .nav-pills {
+  margin-bottom: 20px;
+}
+.sectionTabs .nav-pills .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  color: #484848;
+}
+.sectionTabs .nav-pills .nav-item .nav-link.active {
+  background: #f42267;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0,0,0, .35);
+}
+.btn-shadow {
+  box-shadow: 0 10px 0 #ff5990;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: .5s ease;
+}
+.btn-shadow:hover {
+  box-shadow: 0 5px 0 #ff5990;
+  color: #ffffff;
+  background-color: #da1757;
+}
+/*=============================== Section Progress ========================================*/
+.sectionProgress {
+  background-color: #4b2d7f;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 0;
+}
+.sectionProgress i {
+  font-size: 70px;
+}
+.sectionProgress .num {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 30px 0 20px;
+}
+.sectionProgress h4 {
+  font-size: 30px;
+  height: 72px;
+  overflow: hidden;
+}
+.sectionProgress .progressItem {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  transition: .5s ease;
+}
+.sectionProgress .progressItem:hover {
+  background: #40286a;
+}
+/*=============================== Section Lets Grow ========================================*/
+.sectionLets {
+  /*background: url("../img/letsgrow.jpg") center no-repeat;*/
+  /*background-size: cover;*/
+  background: #525099;
+  color: #ffffff;
+}
+/*=============================== Section Design ========================================*/
+.sectionDesign h3,
+.sectionDesign h3 {
+  color: #484848;
+}
+.sectionDesign h3 {
+  font-size: 33px;
+}
+.sectionDesign span i {
+  font-size: 60px;
+  background: linear-gradient(45deg, rgba(255,0,32,.7) 0%, rgba(68,26,130,.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 15px;
+}
+.sectionDesign h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #484848;
+  margin: 10px 0;
+}
+.sectionDesign p {
+  font-size: 14px;
+}
+.embed-responsive {
+  position: relative;
+  border-radius: 10px;
+}
+#videoPlayBtn {
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  cursor: pointer;
+  background: url("../img/play.png") center no-repeat;
+}
+/*=============================== Section Work ========================================*/
+.sectionWork {
+  background-color: #f1f1f1;
+}
+.sectionWork .nav-pills {
+  margin: 30px 0;
+}
+.galleryItem {
+  margin-bottom: 20px;
+}
+.wp-block-gallery a img {
+  transition: .5s ease;
+}
+.wp-block-gallery a:hover img {
+  box-shadow: 0 14px 30px -15px rgba(0,0,0,.75);
+}
+/*=============================== Section Reviews ========================================*/
+.sectionReviews {
+  background: url("../img/reviews_bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.sectionReviews .carousel-caption {
+  top: 5%;
+  bottom: auto;
+  text-align: left;
+}
+.sectionReviews .blockquote {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  position: relative;
+  padding-left: 40px;
+  margin-top: 70px;
+}
+.sectionReviews .blockquote::before {
+  content: '\201C';
+  float: left;
+  font-size: 150px;
+  font-weight: 500;
+  font-style: italic;
+  color: #f42267;
+  position: absolute;
+  top: -80px;
+  left: -33px;
+}
+/*=============================== Section Form ========================================*/
+.sectionForm {
+  background: url("../img/form_bg.jpg") center no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
+.sectionForm h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+}
+.sectionForm h4 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.sectionForm form {
+  margin-top: 50px;
+}
+.sectionForm .btn-violet {
+  background: #4b2d7f;
+}
+.btn-violet.btn-shadow {
+  box-shadow: 0 7px 0 #a57ee9;
+}
+.btn-violet.btn-shadow:hover {
+  background: #3b2362;
+  box-shadow: 0 4px 0 #a57ee9;
+}
+.sectionForm .form-control {
+  height: 51px;
+  background-color: rgba(255,255,255,.35);
+  color: #ffffff;
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+.sectionForm .form-control:focus {
+  box-shadow: 0 0 0 .2rem rgba(255,255,255,.25);
+}
+.sectionForm .form-control::placeholder {
+  color: #ffffff;
+}
+div.wpcf7 .ajax-loader {
+  background-image: url(../img/ajax-loader.svg);
+  width: 40px;
+  height: 40px;
+}
+span.wpcf7-not-valid-tip{
+  background-color: #ccc;
+}
+div.wpcf7-mail-sent-ok {
+  border: 2px solid #8ee47c;
+}
+/*=============================== Footer ========================================*/
+.footer {
+  background: url("../img/world_map.png") center no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  font-family: 'Poppins', sans-serif;
+}
+.footer h5 {
+  font-size: 25px;
+  color: #4b2d7f;
+  font-weight: bold;
+}
+.footer ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.footer ul li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #171717;
+}
+.footer .footerImages img {
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.gallery-item {
+  float: left;
+  max-width: 45%;
+  margin-right: 20px;
+}
+.copyright {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+}
+.copyright a,
+.copyright span {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+.copyright a::after,
+.copyright span::after {
+  content: '\00B7';
+  position: absolute;
+  right: -3px;
+}
+.copyright li:last-child a::after,
+.copyright li:last-child span::after {
+  content: '';
+}
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+
+/*=============================== Section Content ========================================*/
+.sectionContent {
+  padding: 40px 0;
+}
+.articlePreview {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  transition: .5s ease;
+  margin-bottom: 30px;
+}
+.articlePreview:hover {
+  box-shadow: 0 14px 30px -15px rgba(0,0,0,.75);
+}
+.articlePreview h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.articlePreview a {
+  color: #484848;
+  transition: .5s ease;
+}
+.articlePreview a:hover {
+  color: #f42267;
+  text-decoration: none;
+}
+.articleDate {
+  color: #da1757;
+  font-size: 13px;
+  font-weight: 600;
+}
+.thumb {
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  margin: 0 20px 20px 0;
+  float: left;
+}
+.articlePreview .more {
+   color: #da1757;
+ }
+.articlePreview .more:hover {
+  text-decoration: underline;
+}
+.widget-title {
+  color: #484848;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+.widget-title::after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 30px;
+  background-color: #da1757;
+}
+.widget-categories ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.widget-categories ul li::before {
+  content: '\f138';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 14px;
+  color: #da1757;
+}
+.widget-categories ul li a {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #2f2f2f;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: .5s ease;
+}
+.widget-categories ul li a:hover {
+  color: #da1757;
+}
+/*=============================== Pagination ========================================*/
+.pagination .page-link {
+  color: #da1757;
+  transition: .5s ease;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.pagination .page-link:hover {
+  background-color: #da1737;
+  color: #ffffff;
+  border-color: #f42267;
+}
+.page-item.active .page-link{
+  background-color: #da1757;
+  border-color: #da1757;
+}
+ul.page-numbers {
+  list-style: none;
+  display: flex;
+}
+ul.page-numbers a.page-numbers,
+ul.page-numbers span {
+  color: #da1757;
+  transition: .5s ease;
+  padding: .5rem 1rem;
+  position: relative;
+  display: block;
+  margin-left: -1px;
+  line-height: 1.25;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+ul.page-numbers span.current {
+  background-color: #da1757;
+  border-color: #da1757;
+  color: #fff;
+}
+ul.page-numbers a.page-numbers:hover {
+  background-color: #f42267;
+  color: #fff;
+  border-color: #f42267;
+  text-decoration: none;
+}
+/* Large Devices, Wide Screens*/
+@media only screen and (max-width: 1200px){
+
+}
+/* Medium Devices, Desktops*/
+@media only screen and (max-width: 991px){
+  section,
+  footer{
+    padding: 50px 0;
+  }
+  .copyright{
+    padding: 25px 0;
+  }
+  .mainHeaderText {
+    background-color: rgba( 0,0,0, .3);
+  }
+  .mainHeader .navbar-nav {
+    background: linear-gradient(45deg, #ed1b33 0%, #442e82 100%);
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+  }
+  .sectionReviews h3,
+  .sectionReviews h3 {
+    font-size: 23px;
+  }
+  .sectionReviews .blockquote {
+    font-size: 17px;
+    padding-left: 20px;
+    margin-top: 40px;
+  }
+  .sectionReviews .blockquote::before {
+    font-size: 100px;
+    top: -40px;
+  }
+  .gallery-item{
+    margin-right: 10px;
+  }
+}
+/* Small Devices, Tablets*/
+@media only screen and (max-width: 768px){
+  .mainHeaderText {
+    left: 0;
+    margin: 0 20px;
+    max-width: max-content;
+    top: 90px;
+  }
+  h3,h4 {
+    font-size: 30px;
+  }
+  .sectionProgress .progressItem {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 576px){
+  .sectionReviews .carousel-caption {
+    position: static;
+    width: 70%;
+    margin: auto;
+  }
+}
+/* Extra Small Devices, Phones*/
+@media only screen and (max-width: 480px){
+  .mainHeader .navbar-brand {
+    font-size: 30px;
+  }
+  .mainHeaderButtons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .mainHeaderButtons .btn:last-child {
+    margin-top: 0;
+  }
+  .sectionTabs .nav-pills .nav-item {
+    width: 100%;
+  }
+  .sectionTabs .nav-pills .nav-link {
+    padding: 8px 16px;
+  }
+  .btn-shadow {
+    box-shadow: 0 5px 0 #ff5990;
+    padding: 15px;
+  }
+  .thumb {
+    float: none;
+    width: 100%;
+  }
+}
